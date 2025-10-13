@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — IronFit Gym</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">IronFit</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card-section contact-section">
+      <h2>Get in Touch</h2>
+      <p class="lead">Have questions or want to start your fitness journey? Reach out using the form below or contact us directly.</p>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject">
+          <textarea rows="6" placeholder="Message"></textarea>
+          <div class="form-buttons">
+            <button class="btn primary" type="submit">Send Message</button>
+            <a class="btn secondary" href="mailto:info@ironfit.com">Email Us</a>
+          </div>
+        </form>
+
+        <!-- Contact Info -->
+        <aside class="contact-info">
+          <div class="card">
+            <h3>Contact Info</h3>
+            <p>Email: info@ironfit.com<br>
+               Phone: (555) 123-4567<br>
+               Address: 123 Fitness Ave, Your City</p>
+          </div>
+
+          <div class="card">
+            <h3>Hours</h3>
+            <p>Mon–Fri: 5:00 AM – 10:00 PM<br>
+               Sat–Sun: 6:00 AM – 8:00 PM</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IronFit Gym. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Message sent! (This is a demo — replace with backend handling.)');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
